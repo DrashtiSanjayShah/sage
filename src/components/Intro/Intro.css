@@ -100,11 +100,14 @@
       flex-direction: column;
       gap: 7rem;
       height: 64rem;
+      margin-top: 1rem;
+      margin-bottom: 5rem;
     }
   
     .i-right {
       transform: scale(0.8);
       left: -3rem;
+      display: none;
     }
     .i-right .blur {
       display: none;
@@ -113,4 +116,6 @@
       /* display: none; */
       top: -7rem !important;;
     }
+  
+  
   }

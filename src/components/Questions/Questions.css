@@ -1,0 +1,81 @@
+/* Portfolio.css */
+
+.container {
+  margin-top: -13rem;
+  width: 100%;
+
+}
+.sec-faq{
+  margin-top: -33rem;
+}
+.awesomep {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* gap: 20px; */
+}
+
+.awesomep > :nth-child(1) {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.awesomep > :nth-child(2) {
+  color: var(--orange);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.awesomep > :nth-child(3) {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+.faq-item {
+  margin-bottom: 1.5rem;
+  border: 1px solid orange;
+  padding: 1rem;
+  
+}
+.c-blur1{
+  top: 1rem;
+  left: 8rem;
+}
+.faq-item h3 {
+  margin: 0;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 21px;
+}
+
+.faq-item p{
+  font-size: 19px;
+}
+
+.faq-item.active p {
+  display: block;
+}
+
+.faq-item h3::after {
+  content: "+";
+}
+
+.faq-item.active h3::after {
+  content: "-";
+}
+
+@media screen and (max-width: 480px) {
+  .awesomep{
+    margin-top: 40rem;
+    
+  }
+  .sec-faq{
+    margin-top: -30rem;
+  }
+  .faq-item p{
+    font-size: 21px;
+  }
+  
+}   

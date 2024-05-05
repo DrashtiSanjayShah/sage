@@ -1,0 +1,72 @@
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid var(--orange);
+  border-radius: 8px;
+  margin-top: 4rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: black; /* Change label color to orange */
+}
+
+input[type='text'],
+input[type='date'],
+select {
+  width: 95%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--orange); /* Change input border color to orange */
+  border-radius: 8px;
+}
+select{
+  height: 40px;
+}
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background-color: var(--orange); 
+  color: white; /* Font color white */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  background-color: white; /* Darker red on hover */
+}
+
+@media screen and (max-width: 480px) {
+  .form {
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 2rem;
+  }
+
+  input[type='text'],
+  input[type='date'],
+  select {
+    width: 90%;
+  }
+
+  .form button {
+    font-size: 16px;
+  }
+}

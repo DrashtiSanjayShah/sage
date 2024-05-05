@@ -1,0 +1,97 @@
+.n-wrapper {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    top: 0;
+  }
+  
+  .n-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .n-name {
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  .n-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: 400;
+    font-size: 24px;
+    margin-right: -18rem;
+  }
+  
+  .n-list {
+    flex: 10;
+  }
+  
+  .n-list > ul {
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+    padding: 0;
+  }
+  
+  .n-list > ul :hover {
+    color: var(--orange);
+    cursor: pointer;
+  }
+  
+  .n-button {
+    flex: 2;
+  }
+  
+  .n-hamburger {
+    display: none;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .n-wrapper {
+      padding: 0 1rem;
+    }
+  
+    .n-hamburger {
+      display: block;
+      font-size: 2rem;
+      margin-top: -1rem;
+    }
+  
+    .n-right {
+      display: none;
+    }
+  
+    .n-list {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 80%;
+      background-color: white; /* Add a background color to make the menu visible */
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000; /* Ensure the menu appears above other content */
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(100%);
+    }
+  
+    .n-list.is-open {
+      transform: translateX(0);
+    }
+  
+    .n-list > ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  

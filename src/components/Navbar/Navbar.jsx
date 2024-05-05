@@ -1,30 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <div className="n-wrapper" id="Navbar">
-      {/* left */}
-      <div className="n-left">
-        <div className="n-name">SageBhrigu</div>
+    <nav>
+      <Link to="/" className="title">
+      SageBhrigu
+      </Link>
+      <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      {/* right */}
-      <div className="n-right">
-        <div className="n-list">
-          <ul style={{ listStyleType: "none" }}>
-            <li>
-              <Link to="services" spy={true} smooth={true}>
+      <ul className={menuOpen ? "open" : ""}>
+      <li>
+              <Link to="features" spy={true} smooth={true}>
                 Why us?
               </Link>
             </li>
             <li>
-              <Link to="works" spy={true} smooth={true}>
+              <Link to="includednotincluded" spy={true} smooth={true}>
                 What's included
               </Link>
             </li>
             <li>
-              <Link to="portfolio" spy={true} smooth={true}>
+              <Link to="faq" spy={true} smooth={true}>
                 FAQs
               </Link>
             </li>
@@ -34,15 +37,12 @@ const Navbar = () => {
               </Link>
             </li> */}
             <li>
-              <Link to="contact" spy={true} smooth={true}>
+              <Link to="form" spy={true} smooth={true}>
                 Contact Us
               </Link>
             </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+      </ul>
+    </nav>
   );
 };
-
 export default Navbar;

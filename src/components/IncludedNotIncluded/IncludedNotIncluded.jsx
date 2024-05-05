@@ -1,13 +1,13 @@
-// Works.jsx
-import React from "react";
-import "./Works.css";
 
-const Works = () => {
+import React from "react";
+import "./IncludedNotIncluded.css";
+
+const IncludedNotIncluded = () => {
   return (
-    <div className="dos-and-donts" id="works">
+    <div className="dos-and-donts" id="includednotincluded">
       <div className="dos">
         <div className="i-name">
-          {/* yahan change hy darkmode ka */}
+      
           <span>What's</span>
           <span>Included</span>
         </div>
@@ -37,4 +37,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default IncludedNotIncluded;

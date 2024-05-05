@@ -12,7 +12,7 @@ export const questions = [
     {
         id: 3,
         title: "Why is Kundali matching important?",
-        info: "Kundali matching is considered important in Hindu culture as it is believed to help in ensuring a happy and successful marriage. It is believed that the compatibility between the horoscopes of the bride and groom can have a significant impact on their married life. Kundali matching is believed to help in predicting the success of the marriage and in identifying any potential issues that may arise in the future."
+        info: "Kundali matching is considered important in Hindu culture as it is believed to help in ensuring a happy and successful marriage. Kundali matching is believed to help in predicting the success of the marriage and in identifying any potential issues that may arise in the future."
     },
     {
         id: 4,

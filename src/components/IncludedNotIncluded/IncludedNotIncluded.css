@@ -1,0 +1,75 @@
+.dos-and-donts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13rem;
+  margin-bottom: 18rem;
+}
+
+.dos,
+.donts {
+  flex: 1;
+  position: relative;
+}
+.donts-list{
+  margin-left: 4rem;
+}
+.dos::before {
+  content: "";
+  width: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.i-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.i-name > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.i-name > :nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.i-name > :nth-child(3) {
+  font-weight: 100;
+  font-size: 18px;
+  color: var(--gray);
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .dos-and-donts {
+    flex-direction: column;
+    margin-top: 8rem;
+    margin-bottom: 0rem;
+    font-size: 14px;
+    margin-left: 2rem;
+  }
+
+  .dos::before {
+    display: none;
+  }
+
+ .donts-list, .dos-list{
+    margin-left: 0;
+    margin-top: 2rem;
+    font-size: 15px;
+ }
+}

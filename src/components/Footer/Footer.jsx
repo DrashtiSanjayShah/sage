@@ -1,20 +1,37 @@
 import React from "react";
 import "./Footer.css";
 import Wave from "../../img/wave.png";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <img src={Wave} alt="" style={{ width: "100%" }} />
-      <div className="f-content">
-        <span>SageBhrigu@gmail.com</span>
-        {/* <div className="f-icons">
-          <Insta color="white" size={"3rem"} />
-          <Facebook color="white" size={"3rem"} />
-          <Gitub color="white" size={"3rem"} />
-        </div> */}
+    <footer className="footer">
+      <img src={Wave} alt="Wave" className="footer-wave" />
+      <div className="footer-content">
+        <div className="footer-links">
+          <Link to="features" spy={true} smooth={true}>
+            Why Us?
+          </Link>
+          <Link to="includednotincluded" spy={true} smooth={true}>
+            What's included
+          </Link>
+          <Link to="faq" spy={true} smooth={true}>
+            FAQs
+          </Link>
+          <Link to="testimonals" spy={true} smooth={true}>
+          Reviews
+          </Link>
+          <Link to="contact" spy={true} smooth={true}>
+            Contact
+          </Link>
+        </div>
+        <span className="footer-email">sagebhrigu@gmail.com</span>
+        <div className="footer-policy-links">
+          <Link to="/privacy-policy">Privacy Policy</Link>
+          <Link to="/terms-of-service">Terms of Service</Link>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

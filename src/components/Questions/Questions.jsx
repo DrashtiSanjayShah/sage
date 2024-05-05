@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Portfolio.css";
+import "./Questions.css";
 import { questions } from './data.js';
 
-function Portfolio() {
+function FAQ() {
   const [expandedId, setExpandedId] = useState(null);
 
   const toggleExpand = (id) => {
@@ -12,16 +12,12 @@ function Portfolio() {
   return (
     <main>
       <div className="container">
-      <div className="services" id="portfolio">
+      <div className="services" id="faq">
       {/* left side */}
-      <div className="awesome">
+      <div className="awesomep">
         {/* dark mode */}
-        <span>Frequently Asked</span>
+        <span>Frequently Asked </span>
         <span>Questions</span>
-        {/* <span>
-          in the report
-          <br />
-        </span> */}
         </div>
         </div>
         <section className="sec-faq">
@@ -30,17 +26,14 @@ function Portfolio() {
               <h3 onClick={() => toggleExpand(question.id)}>
                 {question.title} {expandedId === question.id }
               </h3>
-              <div
-            className="blur c-blur1"
-            style={{ background: "var(--purple)" }}
-          ></div>
               {expandedId === question.id && <p>{question.info}</p>}
             </div>
           ))}
         </section>
+        
       </div>
     </main>
   );
 };
 
-export default Portfolio;
+export default FAQ;

@@ -1,28 +1,58 @@
 .footer {
-    display: flex;
-    align-items: center;
-    margin: -0.5rem -3.5rem;
-    position: relative;
-    margin-top: -7rem;
-  }
-  .f-content {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 4rem;
-    gap: 4rem;
-    color: white;
-  }
-  .f-icons {
-    display: flex;
-    gap: 2rem;
-  }
-  
-  @media screen and (max-width: 480px){
-    .f-content{
-      transform: scale(.5);
-    }
-  }
+  margin-top: 10rem;
+  position: relative; /* Add relative positioning */
+  /* background-color: #f8f9fa; */
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-wave {
+  width: 100rem;
+  align-items: center;
+  margin: -16rem;
+}
+
+.footer-content {
+  position: absolute; /* Add absolute positioning */
+  top: 50%; /* Position at the vertical center */
+  left: 50%; /* Position at the horizontal center */
+  transform: translate(-50%, -50%); /* Center the content */
+  width: 100%;
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  margin: 0 1rem;
+  color: black;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #333;
+}
+
+.footer-email {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.footer-policy-links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-policy-links a {
+  margin: 0 1rem;
+  color: black;
+  text-decoration: none;
+}
+
+.footer-policy-links a:hover {
+  color: #333;
+}

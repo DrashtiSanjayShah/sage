@@ -12,6 +12,11 @@
 .t-heading{
     align-self: start;
 }
+
+.t-heading span{
+    color: black;
+}
+
 .t-heading>*{
     font-size: 2rem;
     font-weight: bold;
@@ -71,7 +76,13 @@
 @media screen and (max-width: 480px){
     .t-wrapper{
         padding: 0;
+        margin-top: 0rem;
     }
+
+    .testimonial{
+        margin-top: -6em;
+    }
+
     .testimonial>img{
         width: 70px;
         height: 70px;
